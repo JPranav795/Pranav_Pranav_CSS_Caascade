@@ -1,0 +1,141 @@
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color: black;
+   background-image: url(https://aem.dropbox.com/cms/content/dam/dropbox/blog/files/2017/08/magic-of-to-dos.gif);
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-size: 16px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+}
+
+main{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+#main-title{
+   font-size: larger;
+   color: Turquoise;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1, footer > h2 {
+   text-align: center;
+   padding: 8px;
+}
+
+article{
+   width: 400px;
+   border:  4px solid white;
+   border-radius: 8px;
+   margin: 10px 12px;
+   text-align: left;
+}
+
+article > h2{
+   color: gray;
+   padding: 4px 8px;
+}
+
+article:first-of-type{
+   border: 4px solid rgb(4, 239, 216);
+}
+
+#inprogress {
+   border: 4px solid #333333;
+}
+
+#inprogress h2{
+   color: rgb(252, 227, 0);
+}
+
+#done{
+   border: 4px solid #98FF98;
+}
+
+#done h2{
+   color: #00A86B;
+}
+
+ul{
+   list-style-type:none;
+}
+
+ul li{
+   padding: 6px 8px;
+   text-transform: uppercase;
+}
+
+.todo_list li:nth-child(odd) {
+   background-color: rgba(232, 220, 10, 0.725)
+}
+
+.inprogress_list li:nth-child(odd) {
+   background-color: rgba(11, 205, 222, 0.5)
+}
+
+.done_list li:nth-child(odd) {
+   background-color: rgba(85, 20, 171, 0.5)
+}
+
+.check{
+   text-align: center;
+}
+
+.decorated-heading::after {
+   content: "\📝";
+   margin-left: 5px;
+}
+
+input[type="checkbox"]:checked + span::after{
+   content: "\270F";
+   color: #04f600;
+   margin-left: 5px;
+}
+
+details{
+   border: solid 1px #ccc;
+   padding: 20px;
+   border-radius: 10px;
+   background-color: turquoise;
+}
+
+summary{
+   background-color: #efefef;
+   padding: 10px;
+   font-size: 24px;
+   font-weight: bold;
+   color: #262626;
+}
+
+details h3{
+   margin-top: 15px;
+   margin-bottom: 8px;
+}
+
+.Photo{
+   display: flex;
+   justify-content: center;
+}
+
+ .inprogress_list input[type="checkbox"]:checked + label::after {
+    content: '\2611'; 
+    font-size: 1.2rem; 
+    margin-left: 8px; 
+    color: rgb(173, 4, 4); 
+}
+
+.done_list input[type="checkbox"]:checked + label::after {
+    content: '\2705'; 
+    font-size: 1.2rem; 
+    margin-left: 8px; 
+    color: green; 
+}
+
