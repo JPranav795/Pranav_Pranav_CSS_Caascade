@@ -14,6 +14,10 @@ body{
    color: white;
 }
 
+header{
+   background-color: rgb(234, 234, 5);
+}
+
 main{
    display: flex;
    justify-content: center;
@@ -91,6 +95,7 @@ ul li{
 
 .decorated-heading::after {
    content: "\📝";
+   color: darkblue;
    margin-left: 5px;
 }
 
@@ -139,3 +144,6 @@ details h3{
     color: green; 
 }
 
+footer{
+   background-color: rgb(102, 255, 0);
+}
